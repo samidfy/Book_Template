@@ -4,11 +4,11 @@ This is the template repository for [QUADRIGA](https://quadriga-dk.github.io) OE
 
 ## How to use the Template
 
-Duplicate the repository into a new folder with the name of your book. You could use the command `cp -R Book_Template MY_PROJECT`.
+Duplicate the repository into a new folder with the name of your book. You could use the command `cp -R Book_Template MY_PROJECT`. Or you can fork the repository. You need do be certain to either delete the `.git`-folder and re-initialize git or to change remotes to point to a new repository, if you copied.
 
 Then change the file `book/_config.yml` to fit the new book.
 
-Text you write has to be in Markdown, MyST oder Jupyter Notebook format. To present it in the book you need to link to each file in the `book/_toc.yml`. 
+Any text you write has to be in Markdown, MyST oder Jupyter Notebook format. To present it in the book you need to link to each file in the `book/_toc.yml`. 
 
 ## Local development
 
