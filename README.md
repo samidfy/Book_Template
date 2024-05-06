@@ -17,7 +17,7 @@ We recommend the following procedure:
 - Clone the repository: `git clone https://github.com/quadriga-dk/Book_Template`
 - In the root folder of the repository create a (local) conda environment: `conda create -p conda python=3`.
 - Activate the environment with `conda activate ./conda` (and check which installation of pip is used: `which pip`).
-- Then install the requirements: `pip install -r book/requirements.txt`.
+- Then install the requirements: `pip install -r requirements.txt`.
 - This installed the requirements for the example books as well as Jupyter Books itself. Now you can build a Jupyter Book locally with `jb build book`.
   - If it does't work, check if you use the correct version of Jupyter Book with `which jb`. If it is not the correct one deactivate the environment with `conda deactivate` and then reactivate it again with `conda activate ./conda`
   - It can be helpful to clean up before you build with e.g.: `jb clean book && jb build book`.
