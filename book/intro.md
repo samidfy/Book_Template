@@ -21,7 +21,7 @@ To create a new QUADRIGA OER you can fork this repository and make your changes.
 ## How to work on your QUADRIGA OER
 You can clone the repository locally and then build the book and run it using a local web server. Or you can work directly in Github.
 
-## Example Pages
+## Table of Contents
 
 ```{tableofcontents}
 ```

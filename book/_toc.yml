@@ -3,7 +3,13 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+  - caption: Filetypes
+    chapters:
+      - file: markdown
+      - file: notebooks
+      - file: markdown-notebooks
+  - caption: Assessment
+    chapters:
+      - file: assessment/introduction
+      - file: assessment/jupyterquiz
