@@ -6,7 +6,7 @@ Dieses Repositorium dient als Vorlage für [QUADRIGA](https://quadriga-dk.github
 
 ## Nutzung der Vorlage
 
-Erstelle ein neues Repositorium mit dem Namen des neuen Buchs in der quadriga-dk-Organisation. Kopiere die Inhalte dieses Repositoriums (bspw. Download als .zip-Datei) in das neue Repositorium und passe die Dateien `book/_config.yml`, `book/_toc.yml` sowie die Datei `.github/workflows/deploy-book.yml` auf Dein neues Buch an. Achte darauf, dass Dein neues Buch in einer möglichen lokalen Version keine Git-Verbindung mehr zur Vorlage hat.
+Erstelle ein neues Repositorium mit dem Namen des neuen Buchs in der quadriga-dk-Organisation. Kopiere die Inhalte dieses Repositoriums (bspw. Download als .zip-Datei) in das neue Repositorium und passe die Dateien `_config.yml`, `_toc.yml` sowie die Datei `.github/workflows/deploy-book.yml` auf Dein neues Buch an. Achte darauf, dass Dein neues Buch in einer möglichen lokalen Version keine Git-Verbindung mehr zur Vorlage hat.
 
 Alternativ kannst du auch das Repositorium der Vorlage forken und dann die obigen Änderungen vornehmen. Dann musst Du allerdings aufpassen, welche Änderungen von Upstream Du übernehmen willst.
 
@@ -14,7 +14,7 @@ Alternativ kannst du auch das Repositorium der Vorlage forken und dann die obige
 
 ### Erstellung der Inhalte
 
-Jupyter Book kann standardmäßig Inhalte verarbeiten, die in Mardown, MyST und Jupyter Notebook geschrieben wurden. Inhalte werden in der Website nur angezeigt, wenn sie in `book/_toc.yml` explizit in die Struktur aufgenommen wurden.
+Jupyter Book kann standardmäßig Inhalte verarbeiten, die in Mardown, MyST und Jupyter Notebook geschrieben wurden. Inhalte werden in der Website nur angezeigt, wenn sie in `_toc.yml` explizit in die Struktur aufgenommen wurden.
 
 ## Lokale Entwicklung
 
@@ -27,9 +27,9 @@ Wir empfehlen Dir dieses Vorgehen:
 - Aktiviere nun die Virtuelle Umgebung mit `conda activate ./conda` (und überprüfe, ob alles funktioniert hat mit `which pip`.)
 - Installiere dann die für dein Buch benötigte Software mit `pip install -r requirements.txt`.
   - Es kann nötig sein, dass du nach der Installation einmal die Umgebung deaktivierst und wieder aktivierst, damit du auf alle Software zugreifen kannst. Das geht mit `conda deactivate` gefolgt von `conda activate ./conda`.
-- Nun hast du alle Anforderungen installiert und du kannst das Jupyter Book lokal generieren mit `jb build book`.
-  - Machmal kann es nötig sein "aufzuräumen", bevor du eine neue Version generierst. Das geht mit `jb clean book`. Du kannst auch beide Befehle nacheinander ausführen mit `jb clean book && jb build book`.
-- Die generierte HTML-Version des Buchs kannst du nun unter `_build/html/` finden. Um die Entwicklung zu beschleunigen kann es hilfreich sein, wenn du das Buch über einen lokalen HTTP-Server in deinem Browser verfügbar machst. Öffne dazu ein neues Terminal(-Fenster) und führe diesen Befehl aus: `python3 -m http.server -d book/_build/html/`. Dies startet einen HTTP-Server, der die Inhalte des HTML-Ordners (standardmäßig) unter `http://localhost:8000/` anbietet.
+- Nun hast du alle Anforderungen installiert und du kannst das Jupyter Book lokal generieren mit `jb build .`.
+  - Machmal kann es nötig sein "aufzuräumen", bevor du eine neue Version generierst. Das geht mit `jb clean .`. Du kannst auch beide Befehle nacheinander ausführen mit `jb clean . && jb build .`.
+- Die generierte HTML-Version des Buchs kannst du nun unter `_build/html/` finden. Um die Entwicklung zu beschleunigen kann es hilfreich sein, wenn du das Buch über einen lokalen HTTP-Server in deinem Browser verfügbar machst. Öffne dazu ein neues Terminal(-Fenster) und führe diesen Befehl aus: `python3 -m http.server -d _build/html/`. Dies startet einen HTTP-Server, der die Inhalte des HTML-Ordners (standardmäßig) unter `http://localhost:8000/` anbietet.
 
 # Enlish version
 _german above_
@@ -40,9 +40,9 @@ This is the template repository for [QUADRIGA](https://quadriga-dk.github.io) OE
 
 Duplicate the repository into a new folder with the name of your book. You could use the command `cp -R Book_Template MY_PROJECT`. Or you can fork the repository. You need do be certain to either delete the `.git`-folder and re-initialize git or to change remotes to point to a new repository, if you copied.
 
-Then change the file `book/_config.yml` to fit the new book.
+Then change the file `_config.yml` to fit the new book.
 
-Any text you write has to be in Markdown, MyST oder Jupyter Notebook format. To present it in the book you need to link to each file in the `book/_toc.yml`. 
+Any text you write has to be in Markdown, MyST oder Jupyter Notebook format. To present it in the book you need to link to each file in the `_toc.yml`. 
 
 ## Local development
 
@@ -52,12 +52,12 @@ We recommend the following procedure:
 - In the root folder of the repository create a (local) conda environment: `conda create -p conda python=3`.
 - Activate the environment with `conda activate ./conda` (and check which installation of pip is used: `which pip`).
 - Then install the requirements: `pip install -r requirements.txt`.
-- This installed the requirements for the example books as well as Jupyter Books itself. Now you can build a Jupyter Book locally with `jb build book`.
+- This installed the requirements for the example books as well as Jupyter Books itself. Now you can build a Jupyter Book locally with `jb build .`.
   - If it does't work, check if you use the correct version of Jupyter Book with `which jb`. If it is not the correct one deactivate the environment with `conda deactivate` and then reactivate it again with `conda activate ./conda`
-  - It can be helpful to clean up before you build with e.g.: `jb clean book && jb build book`.
+  - It can be helpful to clean up before you build with e.g.: `jb clean . && jb build .`.
 - You can run a local server to see, what the book looks like. Use for example Pythons builtin HTTP server. In a new terminal run the following command.
   ```bash
-  python3 -m http.server -d book/_build/html/
+  python3 -m http.server -d _build/html/
   ```
-  This serves the files in the subdirectory `book/_build/html/`. To view them use a browser and go to `http://localhost:8000`.
+  This serves the files in the subdirectory `_build/html/`. To view them use a browser and go to `http://localhost:8000`.
 
