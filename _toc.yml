@@ -4,11 +4,14 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Filetypes
+  - caption: Entwicklungsumgebung
     chapters:
-      - file: markdown
-      - file: notebooks
-      - file: markdown-notebooks
+      - file: develop/intro
+  - caption: Datentypen und Formatierung
+    chapters:
+      - file: formatting/markdown
+      - file: formatting/notebooks
+      - file: formatting/markdown-notebooks
   - caption: Assessment
     chapters:
       - file: assessment/introduction
