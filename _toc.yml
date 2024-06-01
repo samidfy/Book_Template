@@ -7,6 +7,7 @@ parts:
   - caption: Entwicklungsumgebung
     chapters:
       - file: develop/intro
+      - file: develop/git
   - caption: Datentypen und Formatierung
     chapters:
       - file: formatting/markdown
