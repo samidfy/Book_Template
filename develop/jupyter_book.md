@@ -1,6 +1,5 @@
 # Jupyter Book
 
-<<<<<<< HEAD
 ## Einrichtung der lokalen Entwicklungsumgebung
 
 
@@ -36,6 +35,4 @@ Wenn du lokale Dateien anpasst musst du immer zuerst `jb build .` ausführen, be
 Kleine Änderungen können auch direkt auf Github durchgeführt werden. Jede Datei hat rechts oben ein Stift-Symbol, wodurch Du in einen Bearbeitungsmodus gelangst. Ein speichern ist hier automatisch ein Commit – denke an eine gute Commit Message.
 
 
-=======
->>>>>>> badaa74 (first steps in writing the text to explain the development environment)
 ## Ressourcen
