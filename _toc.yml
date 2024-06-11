@@ -6,7 +6,6 @@ root: intro
 parts:
   - caption: Entwicklungsumgebung
     chapters:
-- file: intro
       - file: develop/intro
       - file: develop/git
       - file: develop/python
