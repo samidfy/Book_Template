@@ -6,7 +6,7 @@ Diese Vorlage dient der Entwicklung von QUADRIGA OERs. Sie zeigt die Möglichkei
 Wenn du mehr zu Jupyter Book erfahren willst, nutze die [Dokumentation von Juypter Book](https://jupyterbook.org).
 
 ## Jupyter Book vs. Jupyter Notebook
-
+Insert text
 Jupyter Book ist ein Programm, das HTML-Dateien (oder PDFs, …) generiert basierend auf Inhalten und einer Struktur, die Du erstellst.
 
 Jupyter Notebooks sind ausführbare Dokumente, die statische Elemente wie Text (geschrieben in Markdown) und ausführbare Elemente (also Programmcode) in sogenannten Cells (Zellen) verbinden. Der Programmcode kann in mehreren Programmiersprachen verfasst sein und wird in einem sogenannten Kernel ausgeführt. Wenn Du eine Zelle ausführst, dann wird der Code in der Zelle an den Kernel übertragen, welcher den Code ausführt und dann das Ergebnis zurücksendet. Das Ergebnis wird dann im Dokument direkt unterhalb der Code-Zelle angezeigt. 
