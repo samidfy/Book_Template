@@ -14,7 +14,7 @@ Alternativ kannst Du auch das Repositorium der Vorlage forken und dann die obige
 
 ### Erstellung der Inhalte
 
-Jupyter Book kann standardmäßig Inhalte verarbeiten, die in Mardown, MyST und Jupyter Notebook geschrieben wurden. Inhalte werden in der Website nur angezeigt, wenn sie in `_toc.yml` explizit in die Struktur aufgenommen wurden.
+Jupyter Book kann standardmäßig Inhalte verarbeiten, die in Markdown, MyST und Jupyter Notebook geschrieben wurden. Inhalte werden in der Website nur angezeigt, wenn sie in `_toc.yml` explizit in die Struktur aufgenommen wurden.
 
 ## Lokale Entwicklung
 
